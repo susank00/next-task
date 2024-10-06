@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const ProfileCard = () => {
   return (
-    <div className="mx-[114px]">
+    <div style={{ fontFamily: "Helvetica" }} className="mx-[114px]">
       {/* First Section */}
-      <div className="flex justify-between p-4 mt-40 rounded-lg shadow-md ">
+      <div className="flex justify-between p-4 mt-16.5 rounded-lg shadow-md ">
         {/* Left Side: Profile Image */}
         <div className="flex-shrink-0 ">
           <Image
@@ -35,7 +35,9 @@ const ProfileCard = () => {
                   left: "10%",
                 }}
               ></div>
-              <p className="mr-2">Username 76464</p>
+              <p style={{ fontSize: "18px" }} className="mr-2">
+                Username 76464
+              </p>
               <Image
                 src="/image/status.svg"
                 alt="Status Icon"
@@ -43,22 +45,25 @@ const ProfileCard = () => {
                 height={24}
               />
             </div>
-            <h2 className="text-lg font-semibold mt-6.5px">
+            <h2
+              style={{ fontFamily: "HelveticaBold" }}
+              className="text-lg  mt-6.5px"
+            >
               Devendra Chapagain
             </h2>
             <p>Hello, I am a UX/UI Designer</p>
             <div className="flex flex-nowrap mt-8 gap-20">
               <div>
-                <div>300</div>
-                <div>Courses Enrolled</div>
+                <div style={{ fontSize: "28px" }}>300</div>
+                <div style={{ color: "#A3A3A3" }}>Courses Enrolled</div>
               </div>
               <div>
-                <div>1.2k</div>
-                <div>Hours Spent Learning</div>
+                <div style={{ fontSize: "28px" }}>1.2k</div>
+                <div style={{ color: "#A3A3A3" }}>Hours Spent Learning</div>
               </div>
               <div>
-                <div>40</div>
-                <div>Courses Completed</div>
+                <div style={{ fontSize: "28px" }}>40</div>
+                <div style={{ color: "#A3A3A3" }}>Courses Completed</div>
               </div>
             </div>
             <div className="flex gap-5 mt-5">
@@ -91,7 +96,7 @@ const ProfileCard = () => {
         </div>
 
         {/* Right Side: Share Profile */}
-        <div className="flex-shrink-0   ">
+        <a href="" className="flex-shrink-0">
           <div className="flex items-center">
             <Image
               src="/image/share.svg"
@@ -99,19 +104,24 @@ const ProfileCard = () => {
               width={24}
               height={24}
             />
-
             <p className="ml-2">Share Profile</p>
           </div>
-        </div>
+        </a>
       </div>
 
       {/* Divider Line */}
-      <div className="h-px bg-gray-300 my-5" />
+      <div className="h-px bg-gray-300 my-5 w-full" />
+
       {/* Second Section */}
 
       <div className="flex flex-col p-4 mt-9 rounded-lg shadow-md">
-        <h2 className="text-lg font-semibold text-left    ">Course Enrolled</h2>
-        <div className="flex justify-between">
+        <h2
+          style={{ fontFamily: "HelveticaBold", fontSize: "28px" }}
+          className="text-lg  text-left    "
+        >
+          Course Enrolled
+        </h2>
+        <div style={{ fontSize: "20px" }} className="flex justify-between">
           {/* Left Side: Additional Info */}
           <div className="flex-shrink-0 ">
             <div className="space-y-8 mt-5">
@@ -146,165 +156,58 @@ const ProfileCard = () => {
 
       {/* third section start */}
       <div className="flex flex-col p-4 mt-8 rounded-lg shadow-md">
-        <h2 className="text-lg font-semibold text-left    ">
+        <h2
+          style={{ fontFamily: "HelveticaBold", fontSize: "28px" }}
+          className="text-lg font-semibold text-left    "
+        >
           Achievements and Certificates
         </h2>
-        <div className="flex justify-between">
+        <div style={{ fontSize: "20px" }} className="flex justify-between">
           {/* Left Side: Additional Info */}
           <div className="flex-shrink-0 ">
             <div className="space-y-8 mt-5">
               <div className="flex items-center space-x-2 gap-8">
-                <Image
-                  src="/image/blank.svg"
-                  alt="Facebook"
-                  width={37}
-                  height={37}
-                />
-                <div>
-                  <p>Certificate of completion</p>
-                  <p>issued on 2024/01/01</p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-2 gap-8">
-                <Image
-                  src="/image/blank.svg"
-                  alt="Facebook"
-                  width={37}
-                  height={37}
-                />
-                <div>
-                  <p>Certificate of completion</p>
-                  <p>issued on 2024/01/01</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-2 gap-8">
-                <Image
-                  src="/image/blank.svg"
-                  alt="Facebook"
-                  width={37}
-                  height={37}
-                />
-                <div>
-                  <p>Certificate of completion</p>
-                  <p>issued on 2024/01/01</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Center: Additional Information */}
-          <div className="flex-shrink-0">
-            <div className="space-y-8 mt-5">
-              <div>
-                <p>Category</p>
-
-                <p>Diploma</p>
-              </div>
-              <div>
-                <p>Category</p>
-
-                <p>Diploma</p>
-              </div>
-              <div>
-                <p>Category</p>
-
-                <p>Diploma</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex-shrink-0">
-            <div className="space-y-8 mt-5">
-              <div>
-                <p>skill</p>
-                <p>
-                  <span>html,</span>
-                  <span>css</span>
-                </p>
-              </div>
-              <div>
-                <p>skill</p>
-                <p>
-                  <span>html,</span>
-                  <span>css</span>
-                </p>
-              </div>
-              <div>
-                <p>skill</p>
-                <p>
-                  <span>html,</span>
-                  <span>css</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* Right Side: Additional Info */}
-          <div className="flex-shrink-0 ">
-            <div className="space-y-8 mt-5">
-              <div>
-                <button
-                  style={{
-                    backgroundColor: "#232323",
-                    width: "191px",
-                    height: "47px",
-                    borderRadius: "8px",
-                  }}
-                  className="text-white font-semibold transition duration-200"
-                >
-                  Show credentials
-                </button>
-              </div>
-              <div>
-                <button
-                  style={{
-                    backgroundColor: "#232323",
-                    width: "191px",
-                    height: "47px",
-                    borderRadius: "8px",
-                  }}
-                  className="text-white font-semibold transition duration-200"
-                >
-                  Show credentials
-                </button>
-              </div>
-              <div>
-                <button
-                  style={{
-                    backgroundColor: "#232323",
-                    width: "191px",
-                    height: "47px",
-                    borderRadius: "8px",
-                  }}
-                  className="text-white font-semibold transition duration-200"
-                >
-                  Show credentials
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* fourth section start footer section */}
-      <div className="flex flex-col p-4 mt-8 rounded-lg shadow-md">
-        {/* <h2 className="text-lg font-semibold text-left    ">
-          Achievements and Certificates
-        </h2> */}
-        <div className="flex justify-between">
-          {/* Left Side: Additional Info */}
-          <div className="flex-shrink-0 ">
-            <div className="space-y-8 mt-5">
-              <div className="flex items-center space-x-2 gap-4">
-                <div>
+                <a href="/link-to-certificate-1" className="flex items-center">
                   <Image
-                    src="/image/logo.svg"
-                    alt="logo"
-                    width={112.6}
-                    height={25}
+                    src="/image/blank.svg"
+                    alt="Certificate Icon"
+                    width={37}
+                    height={37}
                   />
-                  <p style={{ maxWidth: "260px" }} className="mt-4">
-                    Learn from the top 1% in Nepal and level up your personal
-                    and career growth.
-                  </p>
+                </a>
+                <div>
+                  <p>Certificate of completion</p>
+                  <p style={{ color: "#A3A3A3" }}>issued on 2024/01/01</p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-2 gap-8">
+                <a href="/link-to-certificate-2" className="flex items-center">
+                  <Image
+                    src="/image/blank.svg"
+                    alt="Certificate Icon"
+                    width={37}
+                    height={37}
+                  />
+                </a>
+                <div>
+                  <p>Certificate of completion</p>
+                  <p style={{ color: "#A3A3A3" }}>issued on 2024/01/01</p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-2 gap-8">
+                <a href="/link-to-certificate-3" className="flex items-center">
+                  <Image
+                    src="/image/blank.svg"
+                    alt="Certificate Icon"
+                    width={37}
+                    height={37}
+                  />
+                </a>
+                <div>
+                  <p>Certificate of completion</p>
+                  <p style={{ color: "#A3A3A3" }}>issued on 2024/01/01</p>
                 </div>
               </div>
             </div>
@@ -312,23 +215,46 @@ const ProfileCard = () => {
 
           {/* Center: Additional Information */}
           <div className="flex-shrink-0">
-            <div className="space-y-6 mt-5">
-              <p>Company</p>
-              <div className="space-y-4 ">
-                <p>About us</p>
-                <p>Categories</p>
-                <p>Contact us</p>
+            <div className="space-y-8 mt-5">
+              <div>
+                <p>Category</p>
+
+                <p style={{ color: "#A3A3A3" }}>Diploma</p>
+              </div>
+              <div>
+                <p>Category</p>
+
+                <p style={{ color: "#A3A3A3" }}>Diploma</p>
+              </div>
+              <div>
+                <p>Category</p>
+
+                <p style={{ color: "#A3A3A3" }}>Diploma</p>
               </div>
             </div>
           </div>
-          {/* third column */}
           <div className="flex-shrink-0">
-            <div className="space-y-6 mt-5">
-              <p>Policy</p>
-              <div className="space-y-4 ">
-                <p>Terms and Conditions</p>
-                <p>Work policy</p>
-                <p>Privacy policy</p>
+            <div className="space-y-8 mt-5">
+              <div>
+                <p>skill</p>
+                <p style={{ color: "#A3A3A3" }}>
+                  <span>html,</span>
+                  <span>css</span>
+                </p>
+              </div>
+              <div>
+                <p>skill</p>
+                <p style={{ color: "#A3A3A3" }}>
+                  <span>html,</span>
+                  <span>css</span>
+                </p>
+              </div>
+              <div>
+                <p>skill</p>
+                <p style={{ color: "#A3A3A3" }}>
+                  <span>html,</span>
+                  <span>css</span>
+                </p>
               </div>
             </div>
           </div>
